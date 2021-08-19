@@ -1,0 +1,15 @@
+read -p " Enter Date:-" date
+read -p " Enter Month:-" Month
+
+if (( ($Month <= 12 & $date <= 11) ))
+then
+        echo $Month $date "True";
+
+elif (( ($Month >= 2 & $Month < 12) & ($date<28)  ))
+then
+        echo $date $Month "True";
+
+else
+
+        echo "False";
+fi
